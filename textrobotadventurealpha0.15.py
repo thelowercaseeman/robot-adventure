@@ -83,6 +83,7 @@ def game():
             game()
         elif plans == "3":
             print("You decide to make you home a bunker.")
+            time.sleep(3)
             bunkerplans =input("Do you prepare by: 1 = pulling up the aluminum shutters(wip) , 2 = grab a weapon")
             if bunkerplans == "1":
                 print("wip")
@@ -137,7 +138,7 @@ def game():
                             print("[But I can get used to it.]")
                             time.sleep(3)
                             print("You move toward the door and suddenly see a robot's plasma blade poke through the wood.")
-                            plasmabladeacquiredknifepath = input("Do you: 1 = try to stab the robot through the door, 2 = wait for the robot to come through the door")
+                            plasmabladeacquiredknifepath = input("Do you: 1 = try to stab the robot through the door, 2 = wait for the robot to come through the door(wip)")
                             if plasmabladeacquiredknifepath == "1":
                                 print("You stab the knife through the door and meet resistance.")
                                 time.sleep(4)
@@ -187,6 +188,7 @@ def game():
                                     print("YOU DIED")
                                     time.sleep(3)
                                     print("You got the (POETIC DEATH) ending!")
+                                    game()
                             elif plasmabladeacquiredknifepath == "2":
                                 print("this is gonna be a pretty big ending but its a WIP")
                             else:
